@@ -1,0 +1,369 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family:"Nimbus Sans L";
+}
+
+html body{
+    height:100%;
+    width:100%;
+}
+
+main{
+    width:100%;
+}
+
+#nav{
+    padding:3vw 10vw;
+    display: flex;
+    justify-content: space-between;
+    position:relative;
+    /* background-color: red; */
+}
+
+#nav #nleft{
+    display: flex;
+    gap:30px;
+}
+#nav a{
+    display:inline-block;
+    font-weight: 800;
+    color:black;
+    text-decoration: none;
+    font-size:13px
+}
+
+#nav #ncenter{
+    position: absolute;
+    top:50%;
+    left:50%;
+    font-size: 14px;
+    transform: translate(-50%,-50%);
+}
+
+#hero{
+    width:100%;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    /* background-color: green; */
+    margin-top:14vw;
+    padding:0 10vw;
+}
+
+
+#sustain{
+    width:10vw;
+}
+
+#sustain p{
+    text-transform: capitalize;
+    font-weight: 800;
+    opacity:0.5;
+    font-size: 12px;
+    margin:10px 0;
+}
+#sustain #susimage{
+    width:100%;
+    height:15vw;
+    overflow:hidden;
+    position: relative;
+    /* background-color: red; */
+}
+
+#susimage img{
+    /* position:absolute; */
+    /* top:40%;
+    left:50%;
+    transform: translate(-50%,-50%); for shery js effect*/
+    width:100%;
+    height:100%;
+    object-fit: cover;
+}
+
+
+#ephemeral{
+    width:30vw;
+    min-height:42vw;
+    /* background-color:rgb(134, 114, 114); */
+    position:relative;
+}
+
+#ephemeral #headings{
+    position:absolute;
+    top:-20%;
+    left:-12%;
+}
+#ephemeral h1{
+    font-weight: lighter;
+    letter-spacing: -0.4vw;
+    font-size: 6vw;
+    line-height: 1;
+}
+
+#ephemeral #imgntext{
+    /* background-color: red; */
+    width:fit-content;
+    height:fit-content;
+}
+#ephemeral img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+}
+
+#ephemeral p{
+    /* position:absolute; = because we want the p and imag in one box only */
+    font-size: 1.4vw;
+    font-weight: 800;
+    letter-spacing :-0.07vw;
+    width:40%;
+    padding-top:20px;
+    /* top:103%; */
+}
+
+
+#circlev{
+    width:3vw;
+    height:3vw;
+    border-radius: 50%;
+    border:2px solid #5e5e5e;
+    display: flex;
+    align-items: center;
+    justify-content: center;    
+}
+
+#circlev i{
+    color:#5e5e5e;
+}
+
+#visit{
+    display: flex;
+    margin-top:20px;
+    align-items: center;
+    gap:10px;
+}
+
+#visit h3{
+    color:#5e5e5e;
+    font-weight: 400;
+    font-size: 15px;
+}
+
+#motive{
+    margin-top:8vw;
+    padding:0 10vw;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+#motive h3{
+    /* font-weight: 400; */
+    letter-spacing: -0.05vw;
+    color:#5e5e5e;
+    text-transform: uppercase;
+}
+
+#motive p{
+    margin-top:5vw;
+    position:relative;
+    right:0;
+    width:83%;
+    text-align: right;
+    font-size: 2vw;
+    letter-spacing: -0.05vw;
+    font-weight: 650;
+    line-height: 1.7;
+
+}
+#motive span{
+    display:inline-block; /* impptttt for span tag rulee */
+    margin:0 10px;
+    margin-bottom:-12.5px;
+    border-radius: 100px;
+    /* background-color: red; */
+}
+
+#motive #onespan{
+    width:80px;
+    height:50px;
+    background: url(./bluegirl.jpg)  no-repeat center center/cover;;
+    background-size: cover;
+    background-position: 0% 60%;
+
+}
+
+#motive #twospan{
+    width:120px;
+    height:50px;
+    background: url(./shaljam.jpg)  no-repeat center center/cover;;
+    background-size: cover;
+    background-position: 0% 45%;
+
+}
+
+#motive #threespan{
+    width:80px;
+    height:50px;
+    background: url(./grass.jpg)  no-repeat center center/cover;;
+    background-size: cover;
+    background-position: 0% 45%;
+}
+
+#pictures{
+    padding:3vw 0;
+    margin-top:8vw;
+    padding-left:18vw;
+    padding-right:12vw;
+    display: flex;
+    justify-content: space-between;
+}
+
+#firstpic{
+    width:17vw;
+}
+#firstpic #picimg{
+    width:100%;
+    height:24vw;
+    margin-bottom:1.5vw
+}
+
+#picimg img{
+    width:100%;
+    height:100%;
+    object-fit: cover;
+}
+#firstpic h1{
+    font-weight: 10 0;
+    font-size: 2vw;
+    letter-spacing: -0.1vw;
+}
+
+#firstpic p{
+    opacity:0.8;
+    font-size: 1.2vw;
+    letter-spacing: -0.07vw;
+    margin-top:1vw;
+}
+
+#secpic{
+    width:23vw;
+    display:flex; /* to make it on right sde */
+    flex-direction: column;
+    align-items: end;
+}
+#secpic #picimg{
+    width:100%;
+    height:39vw;
+    margin-bottom:1.5vw
+}
+#secpic h1{
+    text-align: right;
+    font-weight: 10 0;
+    font-size: 2vw;
+    letter-spacing: -0.1vw;
+}
+
+#secpic p{
+    width:80%;
+    text-align: right;
+    opacity:0.8;
+    font-size: 1.2vw;
+    letter-spacing: -0.07vw;
+    margin-top:1vw;
+}
+
+#banner{
+    width:100%;
+    margin-top:6vw;
+    display: flex;
+    /* justify-content: space-between; */
+    align-items: center;
+}
+
+#bimg{
+    width:70%;
+    height:74vh;
+    /* background-color: red; */
+}
+
+#bimg img{
+    width:100%;
+    height:100%;
+    object-position: 0% 69%;
+    object-fit: cover;
+}
+
+#btext{
+    width:30%;
+    padding:0 5vw;
+}
+
+#btext h1{
+    font-size: 2vw;
+    /* font-weight: 400; */
+    letter-spacing: -0.1vw;
+    line-height:1;
+}
+
+#btext p{
+    margin-top:1vw;
+    opacity:0.8;
+    font-size: 1.2vw;
+    letter-spacing: -0.07vw;
+}
+
+
+#future{
+    position:relative;
+    overflow: hidden;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    height:100vh;
+    background-color: #fff;
+}
+
+#fvideo{
+    position:absolute;
+    /* opacity:0; */
+    width:100%;
+    height:100%;
+    /* background-color: red; */
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+}
+
+#fvideo video{
+    opacity: 0;
+}
+#ftext{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position:relative;
+    z-index:999;
+    background-color: #fff;
+    padding:1vw 2vw;
+    border-radius:10px;
+}
+
+#ftext h1{
+    font-size: 2vw;
+}
+#ftext button{
+    padding:0.8vw 1.7vw;
+    font-size: 0.6vw;
+    text-transform: capitalize;
+    margin-top:10px;
+    font-weight: 700;
+    border-radius:100px;
+    background-color: #fff;
+    border:1px solid #c6c6c6;
+    color:#6f6f6f;
+}
